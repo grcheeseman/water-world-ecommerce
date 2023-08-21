@@ -1,56 +1,37 @@
-# Phase-4-Project-E-commerce
+# WaterWorld E-Commerce
 
-# Set Up:
+### Set Up:
     
-    Run in terminal:
+    Run in terminal to run back-end:
         
         cd server
         export FLASK_APP=app.py
         export FLASK_RUN_PORT=5555
         
-        flask db init
-        flask db revision --autogenerate -m "Create table <table name>"
+        flask db revision --autogenerate
         flask db upgrade
         python seed.py
         
         python app.py
 
-    Run front-end React:
+    Run in new terminal to run front-end React:
 
         Run at level above server:
+        npm install
         npm start --prefix client
 
-    To pull from main after you've made changes on your branch:
-        
-        to make sure your branch is clean:
-        git status
+   ### About WaterWorld
+   The objective of this project was to create a full-stack app that allows users to interact with an e-commerce website. 
 
-        if branch is not clean, run this to see differences:
-        git diff
+   The idea behind the items being sold on this app is that this is an e-commerce site from the future where basic resources a scarce and are sold at a premium. In this case, water rights are purchased to do even the most basic of needs, including drinking water or taking a shower.
 
-        if okay with the differences:
-        git stash
+   On the home page, the user is given a backstory behind the store along with a button to allow users to enter the site to shop for water rights.
 
-        make sure your branch is clean again(it should be now):
-        git status
+   On the products page the user and search through the different water right available to them or they may scroll and look at all of their options. The user can click on an item to go to the route for the item details.
 
-        git checkout main
-        git pull origin main
+   ### Technology Used
 
-        make sure your branch is clean again(it should be again):
-        git status
+   In this project we utilized ReactJS, Tailwind CSS, Python, Flask, and SQLAlchemy.
 
-        git check out "your branch name"
-        git rebase main
-        
-        make sure your branch is clean again(it should be again):
-        git status      
-
-        add your stashed changes to you updated rebased main(you will likely have conflicts):
-        git stash pop 
-
-        accept nessecary conflicts on files that need it then:
-        git add .
-        git commit -m "message"
-
-
+   ### Phase 4 Flatiron School React Project
+   Project by Gina, Justin and Morgan
